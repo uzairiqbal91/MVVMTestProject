@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="cityData"
+            type="com.example.mvvmtestproject.data.model.CityData" />
+
+        <variable
+            name="callback"
+            type="com.example.mvvmtestproject.callback.ActionCallback" />
+
+    </data>
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="10dp"
+        android:clickable="true"
+        android:text="@{cityData.title}"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+</layout>
